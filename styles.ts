@@ -31,23 +31,11 @@ export const styles = StyleSheet.create({
       marginLeft: 8,
       color: '#333',
     },
-    iconWrapper: {
+    icon : {
       position: 'relative',
       padding: 6,
     },
-    badge: {
-      position: 'absolute',
-      top: -4,
-      right: -4,
-      backgroundColor: 'red',
-      borderRadius: 8,
-      minWidth: 16,
-      height: 16,
-      justifyContent: 'center',
-      alignItems: 'center',
-    },
-   
-    balanceCard: {
+    cartaoSaldo: {
       backgroundColor: '#00a680',
       borderRadius: 16,
       padding: 16,
@@ -57,7 +45,7 @@ export const styles = StyleSheet.create({
       flexDirection: 'row',
       justifyContent: 'space-between',
     },
-    balanceTitle: {
+    saldoTitle: {
       color: '#fff',
       fontWeight: 'bold',
     },
@@ -65,15 +53,15 @@ export const styles = StyleSheet.create({
       color: '#fff',
       textDecorationLine: 'underline',
     },
-    balanceAmount: {
+    saldoConta: {
       color: '#fff',
       fontSize: 22,
       marginVertical: 8,
     },
-    balanceSubtitle: {
+    saldoSubtitle: {
       color: '#fff',
     },
-    altCardButton: {
+    cardButton: {
       backgroundColor: '#fff',
       padding: 10,
       borderRadius: 50,
@@ -84,86 +72,5 @@ export const styles = StyleSheet.create({
       color: '#000',
       fontWeight: '500',
     },
-    quickActions: {
-      flexDirection: 'row',
-      justifyContent: 'space-around',
-      marginTop: 8,
-      paddingHorizontal: 8,
-    },
-    actionItem: {
-      backgroundColor: '#eee',
-      borderRadius: 16,
-      padding: 12,
-      alignItems: 'center',
-      width: 80,
-    },
-    actionItemSelected: {
-      backgroundColor: '#00a680',
-      borderRadius: 16,
-      padding: 12,
-      alignItems: 'center',
-      width: 80,
-    },
-    actionText: {
-      marginTop: 6,
-      fontSize: 12,
-    },
-    actionTextSelected: {
-      marginTop: 6,
-      fontSize: 12,
-      color: '#fff',
-    },
-    actionBadge: {
-      fontSize: 10,
-      color: '#000',
-      backgroundColor: '#fff',
-      paddingHorizontal: 6,
-      marginTop: 4,
-      borderRadius: 10,
-    },
-    cardSection: {
-      backgroundColor: '#f1f1f1',
-      marginHorizontal: 16,
-      marginTop: 12,
-      padding: 12,
-      borderRadius: 10,
-      flexDirection: 'row',
-      justifyContent: 'space-between',
-    },
-    sectionTitle: {
-      fontSize: 14,
-    },
-    payButton: {
-      backgroundColor: '#000',
-      paddingHorizontal: 16,
-      paddingVertical: 6,
-      borderRadius: 20,
-      flexDirection: 'row',
-      alignItems: 'center',
-      gap: 6,
-    },
-    payText: {
-      color: '#fff',
-      fontWeight: 'bold',
-    },
-    bottomNav: {
-      flexDirection: 'row',
-      justifyContent: 'space-around',
-      padding: 12,
-      borderTopWidth: 1,
-      borderTopColor: '#ddd',
-    },
-    navItem: {
-      alignItems: 'center',
-    },
-    navItemSelected: {
-      alignItems: 'center',
-      backgroundColor: '#00a680',
-      padding: 10,
-      borderRadius: 30,
-    },
-    navTextSelected: {
-      color: '#fff',
-      fontSize: 12,
-    },
+    
   });
