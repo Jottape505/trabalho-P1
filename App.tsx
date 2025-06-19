@@ -1,20 +1,34 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from "react";
+import { View, Text, Image, TouchableOpacity, TextInput   } from "react-native";
+import { styles } from "./styles"
+import { Feather } from '@expo/vector-icons';
+import {Perfil} from "./Lion.png"
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
+
+const App = () => {
+return(
+<View>
+<View style={styles.topBar}>
+        <Image source={Perfil} style={styles.avatar} />
+        <View style={styles.searchContainer}>
+          <Feather name="search" size={16} color="#000" />
+          <TextInput placeholder="Buscar" style={styles.searchInput} />
+        </View>
+        <TouchableOpacity style={styles.iconWrapper}>
+          <Feather name="help-circle" size={20} />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.iconWrapper}>
+          <Feather name="message-square" size={20} />
+        </TouchableOpacity>
+        <TouchableOpacity style={styles.iconWrapper}>
+          <Feather name="bell" size={20} />
+        </TouchableOpacity>
+</View>
+
+
+</View>
+);
+
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
+export default App;
