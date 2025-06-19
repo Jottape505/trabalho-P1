@@ -10,6 +10,7 @@ export const styles = StyleSheet.create({
       alignItems: 'center',
       padding: 16,
       gap: 10,
+      paddingTop: 40,
     },
     avatar: {
     color: '#000',
@@ -38,8 +39,8 @@ export const styles = StyleSheet.create({
     cartaoSaldo: {
       backgroundColor: '#00a680',
       borderRadius: 16,
-      padding: 16,
-      margin: 16,
+      padding: 20,
+      margin: 15,
     },
     balanceHeader: {
       flexDirection: 'row',
@@ -71,6 +72,43 @@ export const styles = StyleSheet.create({
     altCardText: {
       color: '#000',
       fontWeight: '500',
+    },
+    speedActions: {
+      flexDirection: 'row',
+      justifyContent: 'space-around',
+      marginTop: 8,
+      paddingHorizontal: 8,
+    },
+    actionItem: {
+      backgroundColor: '#eee',
+      borderRadius: 16,
+      padding: 12,
+      alignItems: 'center',
+      width: 80,
+    },
+    actionItemSelected: {
+      backgroundColor: '#00a680',
+      borderRadius: 16,
+      padding: 12,
+      alignItems: 'center',
+      width: 80,
+    },
+    actionText: {
+      marginTop: 6,
+      fontSize: 12,
+    },
+    actionTextSelected: {
+      marginTop: 6,
+      fontSize: 12,
+      color: '#fff',
+    },
+    actionBadge: {
+      fontSize: 10,
+      color: '#000',
+      backgroundColor: '#fff',
+      paddingHorizontal: 6,
+      marginTop: 4,
+      borderRadius: 10,
     },
     
   });
