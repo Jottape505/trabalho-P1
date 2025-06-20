@@ -134,5 +134,28 @@ export const styles = StyleSheet.create({
       color: '#fff',
       fontWeight: 'bold',
     },
-    
-  });
+  bottomNav: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    padding: 12,
+    borderTopWidth: 1,
+    borderTopColor: '#ddd',
+  },
+  navItem: {
+    alignItems: 'center',
+  },
+  navItemSelected: {
+    alignItems: 'center',
+    backgroundColor: '#00a680',
+    padding: 10,
+    borderRadius: 30,
+  },
+  navTextSelected: {
+    color: '#fff',
+    fontSize: 12,
+  },
+});
+
+
+
+  

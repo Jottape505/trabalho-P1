@@ -122,6 +122,35 @@ return(
   </TouchableOpacity>
 
 
+  <View style={styles.bottomNav}>
+    <TouchableOpacity>
+      <View style={styles.navItemSelected}>
+        <Feather name="home" size={20} color="#fff" />
+        <Text style={styles.navTextSelected}>Início</Text>
+      </View>
+    </TouchableOpacity>
+    <TouchableOpacity>
+      <View style={styles.navItem}><Feather name="briefcase" size={20} />
+        <Text>Carteira</Text>
+      </View>
+    </TouchableOpacity>
+    <TouchableOpacity>
+      <View style={styles.navItem}><Feather name="credit-card" size={20} />
+        <Text>Cartão</Text>
+      </View>
+    </TouchableOpacity>
+    <TouchableOpacity>
+      <View style={styles.navItem}><Feather name="shopping-bag" size={20} />
+        <Text>Shop</Text>
+      </View>
+    </TouchableOpacity>
+    <TouchableOpacity>
+      <View style={styles.navItem}><Feather name="menu" size={20} />
+        <Text>Menu</Text>
+      </View>
+    </TouchableOpacity>
+  </View>
+
 
 </View>
 );
