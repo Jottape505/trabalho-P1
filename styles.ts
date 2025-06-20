@@ -12,12 +12,12 @@ export const styles = StyleSheet.create({
       gap: 10,
       paddingTop: 40,
     },
-    // avatar: {
-    // color: '#000',
-    //   // width: 36,
-    //   height: 36,
-    //   borderRadius: 18,
-    // },
+    avatar: {
+      color: '#000',
+      width: 36,
+      height: 36,
+      borderRadius: 18,
+    },
     searchContainer: {
       flex: 1,
       flexDirection: 'row',

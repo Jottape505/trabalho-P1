@@ -2,14 +2,15 @@ import React from "react";
 import { View, Text, Image, TouchableOpacity, TextInput   } from "react-native";
 import { styles } from "./styles"
 import { Feather, MaterialIcons } from '@expo/vector-icons';
-import {Perfil} from "./Lion.png"
+import Perfil from "./assets/Perfil/Cr7.jpg"
+
 
 
 const App = () => {
 return(
 <View>
   <View style={styles.topBar}>
-    {/* <Image source={Perfil} style={styles.avatar} /> */}
+    <Image source={Perfil} style={styles.avatar} />
     <View style={styles.searchContainer}>
       <Feather name="search" size={16} color="#000"/>
       <TextInput placeholder="Buscar" style={styles.searchInput} />
