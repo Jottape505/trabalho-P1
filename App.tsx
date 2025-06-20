@@ -9,32 +9,19 @@ const App = () => {
 return(
 <View>
   <View style={styles.topBar}>
-    <Image source={Perfil} style={styles.avatar} />
+    {/* <Image source={Perfil} style={styles.avatar} /> */}
     <View style={styles.searchContainer}>
-      <Feather 
-        name="search" 
-        size={16} 
-        color="#000"
-      />
+      <Feather name="search" size={16} color="#000"/>
       <TextInput placeholder="Buscar" style={styles.searchInput} />
     </View>
     <TouchableOpacity style={styles.icon}>
-      <Feather 
-        name="help-circle" 
-        size={20} 
-      />
+      <Feather name="help-circle" size={20}/>
     </TouchableOpacity>
     <TouchableOpacity style={styles.icon}>
-      <Feather 
-        name="message-square" 
-        size={20} 
-      />
+      <Feather name="message-square" size={20}/>
     </TouchableOpacity>
     <TouchableOpacity style={styles.icon}>
-      <Feather 
-        name="bell" 
-        size={20}
-      />
+      <Feather name="bell" size={20}/>
     </TouchableOpacity>
   </View>
 
@@ -50,6 +37,9 @@ return(
     <Text style={styles.saldoConta}>
       Saldo em conta
     </Text>
+    <TouchableOpacity>
+    <Feather name="eye" size={24} color="#fff" />
+    </TouchableOpacity>
     <Text style={styles.saldoSubtitle}>
       Pode render 102% do CDI
     </Text>
@@ -63,11 +53,7 @@ return(
   <View style={styles.speedActions}>
     <TouchableOpacity>
     <View style={styles.actionItemSelected}>
-      <MaterialIcons 
-      name="pix" 
-      size={24} 
-      color="#fff" 
-    />
+      <MaterialIcons name="pix" size={24} color="#fff"/>
         <Text style={styles.actionTextSelected}>
           Pix
         </Text>
@@ -78,11 +64,7 @@ return(
     </TouchableOpacity>
     <TouchableOpacity>
     <View style={styles.actionItem}>
-      <Feather 
-        name="bar-chart" 
-        size={24} 
-        color="#000" 
-      />
+      <Feather name="bar-chart" size={24} color="#000"/>
       <Text style={styles.actionText}>
         Pagamentos
       </Text>
@@ -90,29 +72,56 @@ return(
     </TouchableOpacity>
     <TouchableOpacity>
     <View style={styles.actionItem}>
-      <Feather 
-      name="credit-card" 
-      size={24} 
-      color="#000" 
-    />
+    <MaterialIcons name="add-card" size={24} color="#000" />
       <Text style={styles.actionText}>
-        Adicionar cartão
+        Adicionar Cartão
       </Text>
     </View>
     </TouchableOpacity>
     <TouchableOpacity>
     <View style={styles.actionItem}>
-      <Feather 
-      name="archive" 
-      size={24} 
-      color="#000" 
-    />
+    <MaterialIcons name="monetization-on" size={24} color="#000" />
       <Text style={styles.actionText}>
-         Guardar no cofrinho
+         Guardar Dinheiro
       </Text>
     </View>
     </TouchableOpacity>
   </View>
+
+  <TouchableOpacity>
+    <View style={styles.cardSection}>
+      <Text style={styles.sectionTitle}>
+        Cartão
+      </Text>
+      <Feather name="credit-card" size={16} color="#000" />
+    </View>
+  </TouchableOpacity>
+  <TouchableOpacity>
+    <View style={styles.cardSection}>
+      <Text style={styles.sectionTitle}>
+        Empréstimos
+      </Text>
+      <MaterialIcons name="handshake" size={24} color="#000" />
+    </View>
+  </TouchableOpacity>
+  <View style={styles.cardSection}>
+    <TouchableOpacity style={styles.payButton}>
+      <Text style={styles.sectionTitle}>
+        Pagar com QR Code
+      </Text>
+      <Feather name="grid" size={16} color="#000" />
+    </TouchableOpacity>
+  </View>
+  <TouchableOpacity>
+    <View style={styles.cardSection}>
+      <Text style={styles.sectionTitle}>
+        Extratos
+      </Text>
+      <MaterialIcons name="sticky-note-2" size={24} color="#000" />
+    </View>
+  </TouchableOpacity>
+
+
 
 </View>
 );

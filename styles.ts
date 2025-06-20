@@ -12,12 +12,12 @@ export const styles = StyleSheet.create({
       gap: 10,
       paddingTop: 40,
     },
-    avatar: {
-    color: '#000',
-      width: 36,
-      height: 36,
-      borderRadius: 18,
-    },
+    // avatar: {
+    // color: '#000',
+    //   // width: 36,
+    //   height: 36,
+    //   borderRadius: 18,
+    // },
     searchContainer: {
       flex: 1,
       flexDirection: 'row',
@@ -109,6 +109,30 @@ export const styles = StyleSheet.create({
       paddingHorizontal: 6,
       marginTop: 4,
       borderRadius: 10,
+    },
+    cardSection: {
+      backgroundColor: '#f1f1f1',
+      marginHorizontal: 16,
+      marginTop: 12,
+      padding: 20,
+      borderRadius: 10,
+      flexDirection: 'row',
+      justifyContent: 'space-between',
+    },
+    sectionTitle: {
+      fontSize: 16,
+    },
+    payButton: {
+      paddingHorizontal: 6,
+      paddingVertical: 6,
+      borderRadius: 20,
+      flexDirection: 'row',
+      alignItems: 'center',
+      gap: 160,
+    },
+    payText: {
+      color: '#fff',
+      fontWeight: 'bold',
     },
     
   });
