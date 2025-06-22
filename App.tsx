@@ -8,7 +8,7 @@ import Perfil from "./assets/Perfil/Cr7.jpg"
 
 const App = () => {
 return(
-<View>
+<View style={styles.container}>
   <View style={styles.topBar}>
     <Image source={Perfil} style={styles.avatar} />
     <View style={styles.searchContainer}>
