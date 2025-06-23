@@ -35,6 +35,8 @@ export const styles = StyleSheet.create({
     icon : {
       position: 'relative',
       padding: 6,
+      backgroundColor: '#eee',
+      borderRadius: 18,
     },
     cartaoSaldo: {
       backgroundColor: '#00a680',
